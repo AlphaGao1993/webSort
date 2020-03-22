@@ -9,7 +9,8 @@ import (
 )
 
 func main() {
-	pip := createNetworkPipeline("large.in", 800000000, 4)
+	pip := createPipeline("large.in", 800000000, 4)
+	//pip := createNetworkPipeline("large.in", 800000000, 4)
 	writeToFile(pip, "large.out")
 	printFile("large.out")
 }
